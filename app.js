@@ -16,6 +16,7 @@ mongoose
 		console.log(err);
 	});
 // seedDb();
+app.use(express.json());
 app.use(blogRoutes);
 
 app.listen(8080, () => {
